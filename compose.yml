@@ -9,7 +9,7 @@ services:
       replicas: 3
 
   application:
-    image: poojadumbel/deepika:app
+    image: poojadumbel/automation:app
     ports:
       - "1111:8080"
     deploy:
