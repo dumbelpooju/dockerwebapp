@@ -17,7 +17,7 @@ services:
       replicas: 3
     depends_on:
       - devopsdb
-    network:
+    networks:
       - mynetwork
 
 networks:
