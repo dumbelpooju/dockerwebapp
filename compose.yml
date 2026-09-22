@@ -5,12 +5,16 @@ services:
     image: poojadumbel/automation1:db
     ports:
       - "3306:3306"
+    deploy:
+      replicas: 1
     networks:
       - mynetwork
   application:
     image: poojadumbel/automation1:app
     ports:
       - "1111:8080"
+    deploy:
+      replicas: 1
     depends_on:
       - devopsdb
     networks:
